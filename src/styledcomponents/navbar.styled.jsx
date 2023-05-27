@@ -13,7 +13,7 @@ const NavbarWrapper = styled.div`
   }
   nav {
     display: flex;
-    width: 30%;
+    width: 35%;
     justify-content: space-around;
     a {
       font-size: 16px;
