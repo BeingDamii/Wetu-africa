@@ -20,6 +20,7 @@ const ArrowButtonWrapper = styled.div`
   width: fit-content;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   a {
     font-size: 18px;
     font-weight: 600;
