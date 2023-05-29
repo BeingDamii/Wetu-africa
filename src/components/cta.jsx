@@ -3,6 +3,7 @@ import ArrowButton from "./arrow-button";
 import ctaVideo from "../resources/ctavideo.mp4";
 import ctaImg from "../resources/ctaimg.png";
 import { useEffect, useState, useRef } from "react";
+import Navbar from "./navbar";
 
 const Cta = () => {
   // hooks

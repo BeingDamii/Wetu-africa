@@ -3,7 +3,9 @@ import styled from "styled-components";
 const CtaWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  padding: 20px 50px;
   .cta-hero {
     width: 100%;
     display: flex;
@@ -44,11 +46,10 @@ const CtaWrapper = styled.div`
       width: 100%;
       height: 100%;
     }
-    img{
+    img {
       object-fit: cover;
       width: 100%;
       height: 100%;
-
     }
   }
 `;
