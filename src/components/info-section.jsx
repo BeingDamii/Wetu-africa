@@ -1,3 +1,10 @@
+import { Link } from "react-router-dom";
+import {
+  DribbbleIcon,
+  GithubIcon,
+  InstagramIcon,
+  TwitterIcon,
+} from "../resources/icons";
 import InfoSectionWrapper from "../styledcomponents/info-section.styled";
 import ArrowButton from "./arrow-button";
 
@@ -38,6 +45,20 @@ const InfoSection = () => {
             </p>
             <ArrowButton text={"Get started"} isRight={true} />
           </div>
+        </div>
+        <div className="desc-icons">
+          <Link to={"/"}>
+            <InstagramIcon />
+          </Link>
+          <Link to={"/"}>
+            <TwitterIcon />
+          </Link>
+          <Link to={"/"}>
+            <DribbbleIcon />
+          </Link>
+          <Link to={"/"}>
+            <GithubIcon />
+          </Link>
         </div>
       </div>
       <div className="container">

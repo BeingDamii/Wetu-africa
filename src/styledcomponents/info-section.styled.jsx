@@ -41,6 +41,12 @@ const InfoSectionWrapper = styled.div`
         }
       }
     }
+    .desc-icons {
+      margin-top: 30px;
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 `;
 
