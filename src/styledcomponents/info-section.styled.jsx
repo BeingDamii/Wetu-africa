@@ -10,13 +10,13 @@ const InfoSectionWrapper = styled.div`
   padding-top: 70px;
   display: flex;
   .container {
-    background-color: yellow;
     width: 60%;
     :nth-child(1) {
       width: 40%;
       background-color: #ffffff;
     }
   }
+
   .desc-container {
     display: flex;
     flex-direction: column;
@@ -46,6 +46,26 @@ const InfoSectionWrapper = styled.div`
       width: 40%;
       display: flex;
       justify-content: space-between;
+    }
+  }
+  .card-wrapper {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    .location-card {
+      background-color: white;
+      img {
+        width: 100%;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        line-height: 148%;
+        font-size: 16px;
+        color: #606060;
+        margin-top: 10px;
+      }
     }
   }
 `;

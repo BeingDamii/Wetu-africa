@@ -7,6 +7,7 @@ import {
 } from "../resources/icons";
 import InfoSectionWrapper from "../styledcomponents/info-section.styled";
 import ArrowButton from "./arrow-button";
+import img1 from "../resources/img1.png";
 
 const InfoSection = () => {
   return (
@@ -61,8 +62,31 @@ const InfoSection = () => {
           </Link>
         </div>
       </div>
-      <div className="container">
-        <h1>hello</h1>
+      <div className="container card-wrapper">
+        <div className="location-card">
+          <img src={img1} alt="this is a card img" />
+          <h1>Pyramids of Giza, Egypt</h1>
+          <p>
+            Marvel at the ancient wonders of the world, the iconic pyramids, and
+            the Sphinx in Egypt's vast desert.
+          </p>
+        </div>
+        <div className="location-card">
+          <img src={img1} alt="this is a card img" />
+          <h1>Pyramids of Giza, Egypt</h1>
+          <p>
+            Marvel at the ancient wonders of the world, the iconic pyramids, and
+            the Sphinx in Egypt's vast desert.
+          </p>
+        </div>
+        <div className="location-card">
+          <img src={img1} alt="this is a card img" />
+          <h1>Pyramids of Giza, Egypt</h1>
+          <p>
+            Marvel at the ancient wonders of the world, the iconic pyramids, and
+            the Sphinx in Egypt's vast desert.
+          </p>
+        </div>
       </div>
     </InfoSectionWrapper>
   );
