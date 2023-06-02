@@ -51,21 +51,12 @@ const InfoSectionWrapper = styled.div`
   .card-wrapper {
     display: grid;
     column-gap: 10px;
-    grid-template-columns: auto auto auto;
-    .location-card {
-      background-color: white;
-      img {
-        width: 100%;
-      }
-      h1 {
-        font-size: 20px;
-      }
-      p {
-        line-height: 148%;
-        font-size: 16px;
-        color: #606060;
-        margin-top: 10px;
-      }
+    height: 100vh;
+    overflow: auto;
+    row-gap: 20px;
+    grid-template-columns: 32% 32% 32%;
+    ::-webkit-scrollbar {
+      width: 0px;
     }
   }
 `;

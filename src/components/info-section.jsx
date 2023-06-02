@@ -8,8 +8,14 @@ import {
 import InfoSectionWrapper from "../styledcomponents/info-section.styled";
 import ArrowButton from "./arrow-button";
 import img1 from "../resources/img1.png";
+import locationData from "../resources/locationData";
+import LocationCard from "./location-card";
+import { v4 as uuidv4 } from 'uuid';
 
 const InfoSection = () => {
+  const data = locationData();
+
+
   return (
     <InfoSectionWrapper>
       <div className="container desc-container">
@@ -63,30 +69,9 @@ const InfoSection = () => {
         </div>
       </div>
       <div className="container card-wrapper">
-        <div className="location-card">
-          <img src={img1} alt="this is a card img" />
-          <h1>Pyramids of Giza, Egypt</h1>
-          <p>
-            Marvel at the ancient wonders of the world, the iconic pyramids, and
-            the Sphinx in Egypt's vast desert.
-          </p>
-        </div>
-        <div className="location-card">
-          <img src={img1} alt="this is a card img" />
-          <h1>Pyramids of Giza, Egypt</h1>
-          <p>
-            Marvel at the ancient wonders of the world, the iconic pyramids, and
-            the Sphinx in Egypt's vast desert.
-          </p>
-        </div>
-        <div className="location-card">
-          <img src={img1} alt="this is a card img" />
-          <h1>Pyramids of Giza, Egypt</h1>
-          <p>
-            Marvel at the ancient wonders of the world, the iconic pyramids, and
-            the Sphinx in Egypt's vast desert.
-          </p>
-        </div>
+        {data.map((location) => {
+          return <LocationCard key={uuidv4()} data={location} />;
+        })}
       </div>
     </InfoSectionWrapper>
   );
