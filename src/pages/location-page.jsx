@@ -1,42 +1,50 @@
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import ArrowButton from "../components/arrow-button";
 import LocationAction from "../components/location-action";
+import LocationCard from "../components/location-card";
 import Navbar from "../components/navbar";
+import locationData from "../resources/locationData";
 import StyledLocationPage from "../styledcomponents/location-page.styled";
+
+import { v4 as uuidv4 } from "uuid";
+import SideAttractionCard from "../components/side-attraction-card";
 
 const LocationPage = () => {
   const navigate = useNavigate();
-  const location = useLocation();
+  const locationUrl = useLocation();
+  const { pathname } = locationUrl;
 
-  console.log(location);
+  const [locations, setLocations] = useState(locationData);
+  const [location, setLocation] = useState(null);
+
+  useEffect(() => {
+    const currentLocationData = locations.filter(
+      (locationState) => locationState.url === pathname
+    );
+    setLocation(...currentLocationData);
+  }, [pathname, locations]);
   return (
-    <StyledLocationPage>
-      <Navbar />
-      <div className="location-page-wrapper">
-        <div className="container">
-          <h1>About Masai Mara National Reserve,Kenya</h1>
-          <p>
-            Welcome to the enchanting Serengeti National Park in Tanzania, where
-            nature's majesty unfolds on an epic scale. Spanning vast savannahs,
-            Serengeti is a sanctuary of captivating beauty and abundant
-            wildlife. As the sun-kissed grasslands stretch as far as the eye can
-            see, witness the breathtaking spectacle of the annual wildebeest
-            migration, where millions of wildebeest, zebras, and other
-            herbivores traverse the plains in search of fresh grazing. With
-            lions prowling, cheetahs sprinting, and elephants grazing, the
-            Serengeti offers an unparalleled opportunity to witness nature's raw
-            power and delicate balance. Immerse yourself in this timeless
-            landscape, where every sunrise paints the horizon with hues of gold
-            and every sunset sets the sky ablaze. Serengeti National Park
-            beckons adventurers, nature enthusiasts, and dreamers alike to
-            experience the sheer wonder of Africa's untamed wilderness.
-          </p>
-          <LocationAction />
-          <ArrowButton text={"Go back"}/>
-        </div>
-        <div className="container"></div>
-      </div>
-    </StyledLocationPage>
+    <>
+      {location && (
+        <StyledLocationPage>
+          <Navbar />
+          <div className="location-page-wrapper">
+            <div className="container">
+              <h1>About {location.title}</h1>
+              <p>{location.longDescription}</p>
+              <LocationAction />
+              <ArrowButton text={"Go back"} />
+            </div>
+            <div className="container side-attractions ">
+              {location.sideAttractions.map((attraction) => {
+                return <SideAttractionCard key={uuidv4()} data={attraction} />;
+              })}
+            </div>
+          </div>
+        </StyledLocationPage>
+      )}
+    </>
   );
 };
 

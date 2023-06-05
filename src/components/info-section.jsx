@@ -7,7 +7,6 @@ import {
 } from "../resources/icons";
 import InfoSectionWrapper from "../styledcomponents/info-section.styled";
 import ArrowButton from "./arrow-button";
-import img1 from "../resources/img1.png";
 import locationData from "../resources/locationData";
 import LocationCard from "./location-card";
 import { v4 as uuidv4 } from 'uuid';

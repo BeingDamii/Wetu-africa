@@ -20,6 +20,7 @@ const InfoSectionWrapper = styled.div`
   .desc-container {
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
     h1 {
       font-size: 28px;
     }
