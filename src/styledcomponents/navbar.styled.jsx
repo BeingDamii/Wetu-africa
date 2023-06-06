@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const NavbarWrapper = styled.div`
+const NavbarWrapper = styled(motion.div)`
   display: flex;
   padding: 30px 50px;
   justify-content: space-between;

@@ -46,6 +46,7 @@ const CtaWrapper = styled.div`
     background-color: #f1f1f1;
     height: 440px;
     margin-top: 10px;
+    overflow: hidden;
     video {
       object-fit: cover;
       width: 100%;

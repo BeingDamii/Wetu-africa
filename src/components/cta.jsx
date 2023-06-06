@@ -3,7 +3,12 @@ import ArrowButton from "./arrow-button";
 import ctaVideo from "../resources/ctavideo.mp4";
 import ctaImg from "../resources/ctaimg.png";
 import { useEffect, useState, useRef } from "react";
-
+import { motion } from "framer-motion";
+import {
+  heroVariant,
+  entryMotion,
+  videoAnimeVariant,
+} from "../resources/variants";
 
 const Cta = () => {
   // hooks
@@ -26,15 +31,21 @@ const Cta = () => {
     };
 
     playVideo(); // Autoplay the video on component mount
-  }, []);
+  });
 
   function handleEnded() {
     videoRef.current.currentTime = 0;
     videoRef.current.play();
   }
+
   return (
     <CtaWrapper>
-      <div className="cta-hero">
+      <motion.div
+        className="cta-hero"
+        variants={heroVariant}
+        initial="initial"
+        animate="animate"
+      >
         <div className="container">
           <h1>EXPLORE BEAUTIFUL PLACES IN AFRICA.</h1>
           <p>We curate sights and experiences from around Africa</p>
@@ -55,17 +66,31 @@ const Cta = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="cta-video">
+      </motion.div>
+
+      <motion.div
+        className="cta-video"
+        variants={entryMotion}
+        initial="initial"
+        animate="animate"
+      >
         {videoAvailable ? (
-          <video ref={videoRef}autoPlay muted onEnded={handleEnded}>
+          <motion.video
+            variants={videoAnimeVariant}
+            initial="initial"
+            animate="animate"
+            ref={videoRef}
+            autoPlay
+            muted
+            onEnded={handleEnded}
+          >
             <source src={ctaVideo} type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </motion.video>
         ) : (
           <img src={ctaImg} alt="video cannot play" />
         )}
-      </div>
+      </motion.div>
     </CtaWrapper>
   );
 };

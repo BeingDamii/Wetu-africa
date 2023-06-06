@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import NavbarWrapper from "../styledcomponents/navbar.styled";
+import { navbarVariant } from "../resources/variants";
 
 const Navbar = () => {
   return (
-    <NavbarWrapper>
+    <NavbarWrapper variants={navbarVariant} initial="initial" animate="animate" >
       <NavLink to={"/"}>
         <h1>Wetu Africa.</h1>
       </NavLink>
