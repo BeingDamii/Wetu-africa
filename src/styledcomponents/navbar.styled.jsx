@@ -7,7 +7,7 @@ const NavbarWrapper = styled.div`
   align-content: center;
   align-items: center;
   width: 100%;
-  background-color: #0a0a0a;
+  background-color: #1f1f1f;
   h1 {
     color: #00277a;
     color: #ffffff;

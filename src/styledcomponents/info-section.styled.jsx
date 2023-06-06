@@ -7,6 +7,7 @@ const InfoSectionWrapper = styled.div`
   top: 0;
   background-color: white;
   background-color: #111111;
+  background-color: #1f1f1f;
   color: white;
   padding: 20px 50px;
   padding-top: 70px;
