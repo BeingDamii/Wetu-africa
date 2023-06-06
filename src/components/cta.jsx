@@ -9,6 +9,7 @@ import {
   entryMotion,
   videoAnimeVariant,
 } from "../resources/variants";
+import WavingHand from "./waving-hand";
 
 const Cta = () => {
   // hooks
@@ -40,6 +41,7 @@ const Cta = () => {
 
   return (
     <CtaWrapper>
+      <WavingHand/>
       <motion.div
         className="cta-hero"
         variants={heroVariant}
