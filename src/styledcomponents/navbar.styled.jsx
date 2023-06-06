@@ -7,8 +7,10 @@ const NavbarWrapper = styled.div`
   align-content: center;
   align-items: center;
   width: 100%;
+  background-color: #0a0a0a;
   h1 {
     color: #00277a;
+    color: #ffffff;
     font-size: 24px;
   }
   nav {
@@ -18,6 +20,7 @@ const NavbarWrapper = styled.div`
     a {
       font-size: 16px;
       font-weight: 600;
+      color: white;
     }
   }
 `;

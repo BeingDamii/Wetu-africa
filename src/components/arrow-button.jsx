@@ -5,7 +5,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "../resources/icons";
 const ArrowButton = ({ text, isRight }) => {
   return (
     <ArrowButtonWrapper
-      style={{ flexDirection: `${isRight? "row":"row-reverse"}` }}
+      style={{ flexDirection: `${isRight ? "row" : "row-reverse"}` }}
     >
       <Link to={"/"}>{text}</Link>
       {isRight ? <ArrowRightIcon /> : <ArrowLeftIcon />}
@@ -24,9 +24,13 @@ const ArrowButtonWrapper = styled.div`
   a {
     font-size: 18px;
     font-weight: 600;
+    color: white;
   }
   svg {
     margin-left: 10px;
+    path{
+      fill: white;
+    }
   }
 `;
 export default ArrowButton;

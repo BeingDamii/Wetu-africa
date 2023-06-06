@@ -6,6 +6,8 @@ const CtaWrapper = styled.div`
   position: sticky;
   top: 0;
   padding: 20px 50px;
+  background-color: #0a0a0a;
+  color: white;
   .cta-hero {
     width: 100%;
     display: flex;
@@ -20,6 +22,7 @@ const CtaWrapper = styled.div`
       p {
         font-size: 18px;
         color: #606060;
+        color: #b4b4b4;
         margin-top: 5px;
       }
       .container-desc {

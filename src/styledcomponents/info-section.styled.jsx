@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 const InfoSectionWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   position: sticky;
   top: 0;
   background-color: white;
+  background-color: #111111;
+  color: white;
   padding: 20px 50px;
   padding-top: 70px;
   display: flex;
@@ -13,7 +15,7 @@ const InfoSectionWrapper = styled.div`
     width: 60%;
     :nth-child(1) {
       width: 40%;
-      background-color: #ffffff;
+      /* background-color: #ffffff; */
     }
   }
 
@@ -29,6 +31,7 @@ const InfoSectionWrapper = styled.div`
       line-height: 168%;
       margin-top: 20px;
       color: #606060;
+      color: #b4b4b4;
     }
     .desc-row {
       display: flex;
@@ -51,7 +54,10 @@ const InfoSectionWrapper = styled.div`
   }
   .card-wrapper {
     display: grid;
-    column-gap: 10px;
+    /* column-gap: 10px; */
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #1f1f1f;
     height: 100vh;
     overflow: auto;
     row-gap: 20px;

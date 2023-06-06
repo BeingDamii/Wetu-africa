@@ -4,7 +4,7 @@ import styled from "styled-components";
 const LocationCard = ({ data }) => {
   const navigate = useNavigate();
   function clickHandler() {
-    navigate(data.url)
+    navigate(data.url);
   }
   return (
     <StyledLocationCard onClick={clickHandler}>
@@ -18,8 +18,9 @@ const LocationCard = ({ data }) => {
 // styles
 
 const StyledLocationCard = styled.div`
-  background-color: white;
+  /* background-color: white; */
   cursor: pointer;
+  padding: 10px;
   img {
     width: 100%;
   }
@@ -30,6 +31,7 @@ const StyledLocationCard = styled.div`
     line-height: 148%;
     font-size: 14px;
     color: #606060;
+    color: #b4b4b4;
     margin-top: 10px;
   }
 `;
