@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const SideAttractionCard = ({ data }) => {
-  console.log(data);
   return (
     <StyledSideAttractionCard>
       <img src={data.img} alt="this is a card img" />
