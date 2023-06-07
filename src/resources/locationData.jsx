@@ -31,6 +31,21 @@ import serengeti from "../resources/serengeti.png";
 import serengetiimg1 from "../resources/serengetiimg1.png";
 import serengetiimg2 from "../resources/serengetiimg2.png";
 
+// seventh
+import yankari from "../resources/yankari.png";
+import yankariimg1 from "../resources/yankariimg1.png";
+import yankariimg2 from "../resources/yankariimg2.png";
+
+// seventh
+import zanzibar from "../resources/zanzibar.png";
+import zanzibarimg1 from "../resources/zanzibarimg1.png";
+import zanzibarimg2 from "../resources/zanzibarimg2.png";
+
+// eighth
+import djemaa from "../resources/djemaa.png";
+import djemaaimg1 from "../resources/djemaaimg1.png";
+import djemaaimg2 from "../resources/djemaaimg2.png";
+
 const locationData = () => {
   return [
     {
@@ -192,6 +207,75 @@ const locationData = () => {
           img: serengetiimg2,
           description:
             "Take a fascinating detour to the Olduvai Gorge, often referred to as the 'Cradle of Mankind.'This archaeological site has yielded significant discoveries, providing insights into early human evolution. Explore the museum and learn about the rich history of human origins.",
+        },
+      ],
+    },
+    {
+      title: "Yankari Game reserve, Nigeria",
+      shortDescription:
+        "Explore the vibrant city, hike up Table Mountain for breathtaking views, and visit the stunning Cape Peninsula.",
+      longDescription:
+        "Nestled within the heart of Nigeria lies the magnificent Yankari Game Reserve, a true haven for nature enthusiasts and wildlife aficionados. As the country's largest national park, Yankari unveils a mesmerizing tapestry of untamed wilderness, teeming with diverse flora and fauna. Embark on an extraordinary safari adventure, as you traverse the undulating landscapes, where elephants majestically roam, lions stealthily prowl, and baboons playfully swing from tree to tree. Be enchanted by the crystal-clear warm waters of Wikki Springs, where you can immerse yourself in rejuvenating baths amidst the captivating sights and sounds of the wild. Engage with the local community and gain insights into their unique customs and traditions, as their warm hospitality adds an extra layer of authenticity to your experience. Yankari Game Reserve beckons you to a world where the untamed reigns supreme, leaving indelible memories of Africa's natural wonders etched in your soul.",
+      url: "/location/Yankari",
+      mainImg: yankari,
+      sideAttractions: [
+        {
+          title: "Wikki Warm Springs",
+          img: yankariimg1,
+          description:
+            "Located within the Yankari Game Reserve, the Wikki Warm Springs is a natural warm-water spring that flows all year round. It offers a unique opportunity to relax and rejuvenate in its crystal-clear waters, surrounded by lush vegetation. Visitors can take a dip, swim, or simply enjoy the serene beauty of the surroundings. The springs are known for their therapeutic properties and are a popular attraction for both locals and tourists.",
+        },
+        {
+          title: "Marshall Caves",
+          img: yankariimg2,
+          description:
+            "Situated near the game reserve, Marshall Caves are a fascinating network of limestone caves waiting to be explored. These caves are believed to be over 800 years old and were once used as a shelter by the local community. Visitors can venture into the depths of the caves, marvel at the intricate rock formations, and learn about their historical and cultural significance. The caves provide a unique and adventurous experience for those seeking to delve into the mysteries of the underground world.",
+        },
+      ],
+    },
+    {
+      title: "Zanzibar, Tanzania",
+      shortDescription:
+        "Indulge in the turquoise waters, pristine beaches, and fascinating historical sites of this tropical island off the Tanzanian coast.",
+      longDescription:
+        "Step into a Paradise of Exotic Wonders: Zanzibar, the Jewel of Tanzania. Nestled off the East African coast, this enchanting island beckons with its pristine beaches, vibrant coral reefs, and a tapestry of rich cultural heritage. Immerse yourself in the labyrinthine streets of Stone Town, a UNESCO World Heritage site, where the air is filled with the aroma of exotic spices and echoes of Swahili history. Indulge in a sensory feast as you savor the flavors of Zanzibar's renowned cuisine, blending Arabian, Indian, and African influences. Embark on an underwater escapade to explore the kaleidoscopic marine life, snorkeling or diving in the warm turquoise waters. And as the sun sets, witness a spectacle of hues painting the sky, casting a magical glow over the island. Zanzibar captivates the soul, leaving an indelible imprint of paradise in your heart.",
+      url: "/location/Zanzibar",
+      mainImg: zanzibar,
+      sideAttractions: [
+        {
+          title: "Stone Town",
+          img: zanzibarimg1,
+          description:
+            "Explore the narrow streets and historic architecture of Stone Town, the old quarter of Zanzibar City. Immerse yourself in the rich cultural heritage, vibrant markets, and beautiful Arab-influenced buildings. Visit the Palace Museum, the House of Wonders, and the Old Fort for a glimpse into the island's fascinating history.",
+        },
+        {
+          title: "Spice Plantations",
+          img: zanzibarimg2,
+          description:
+            "Take a tour of the aromatic spice plantations that Zanzibar is famous for. Experience the scents and flavors of spices such as cloves, vanilla, cinnamon, and nutmeg. Learn about their cultivation and the island's spice trading history. Engage in a sensory journey and even purchase some authentic Zanzibari spices to take home as souvenirs.",
+        },
+      ],
+    },
+    {
+      title: "Djemaa el Fna, Morocco",
+      shortDescription:
+        "Lose yourself in the bustling heart of Marrakech, where snake charmers, storytellers, and vibrant markets create a sensory extravaganza.",
+      longDescription:
+        "Step into a mesmerizing world of sensory overload at Djemaa el Fna, Morocco's beating heart. As dusk descends, the vibrant square in Marrakech transforms into a captivating spectacle, where the air fills with the enticing aromas of sizzling street food and the rhythmic beats of traditional music. Amidst a kaleidoscope of swirling colors, snake charmers enchant with their mesmerizing performances, while storytellers captivate eager audiences with tales of old. Bargain hunters immerse themselves in a labyrinth of bustling souks, haggling for vibrant textiles, intricate ceramics, and aromatic spices. Djemaa el Fna is a sensory feast, an enchanting fusion of sights, sounds, and scents that transports visitors to an ancient world where tradition and modernity dance in harmony.",
+      url: "/location/Djemaa",
+      mainImg: djemaa,
+      sideAttractions: [
+        {
+          title: "Bahia Palace",
+          img: djemaaimg1,
+          description:
+            "Located nearby in the city of Marrakech, Bahia Palace is a stunning 19th-century palace showcasing exquisite Moroccan architecture and lush gardens. Immerse yourself in the opulent interiors adorned with colorful tiles, intricate woodwork, and ornate ceilings. The peaceful courtyards and serene fountains offer a tranquil escape from the bustling energy of Djemaa el Fna.",
+        },
+        {
+          title: "Majorelle Garden",
+          img: djemaaimg2,
+          description:
+            " A short distance away from Djemaa el Fna, Majorelle Garden is a botanical oasis in Marrakech. Created by French painter Jacques Majorelle, the garden features a vibrant array of plants, exotic cacti, and captivating blue-painted structures. Stroll through the serene pathways, visit the Berber Museum within the garden, and admire the picturesque scenery that inspired the renowned fashion designer Yves Saint Laurent, who later acquired the garden and restored it to its former glory.",
         },
       ],
     },
