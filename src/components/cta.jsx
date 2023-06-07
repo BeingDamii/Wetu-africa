@@ -41,7 +41,6 @@ const Cta = () => {
 
   return (
     <CtaWrapper>
-      <WavingHand/>
       <motion.div
         className="cta-hero"
         variants={heroVariant}

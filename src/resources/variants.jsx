@@ -35,7 +35,7 @@ export const navbarVariant = {
     opacity: 1,
     transition: {
       ease: "linear",
-      duration: .5,
+      duration: 0.5,
       delay: 1.8,
     },
   },
@@ -46,12 +46,46 @@ export const heroVariant = {
     y: 30,
     opacity: 0,
   },
-  animate:{
+  animate: {
     y: 0,
-    opacity:1,
+    opacity: 1,
     transition: {
-      duration: 1,
-      delay: 2.5,
+      duration: 0.8,
+      delay: 2.2,
     },
-  }
+  },
+};
+
+export const wavingHandVariant = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      ease: "linear",
+      duration: 0.7,
+      delay: 3,
+    },
+  },
+};
+
+export const wavingHandWhileHover = {
+  scale: 1.5,
+  transition: { type: "spring", duration: 0.5 },
+};
+
+export const navElementAnimation = {
+  initial: {
+    opacity: 0,
+    width: 0,
+  },
+  animate: {
+    opacity: 1,
+    width: "100%",
+    transition: {
+      ease: "easeIn",
+      duration: 0.3,
+    },
+  },
 };
