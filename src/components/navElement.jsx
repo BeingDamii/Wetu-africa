@@ -36,12 +36,12 @@ const StyledNavElemnt = styled.div`
   display: flex;
   flex-direction: column;
   width: fit-content;
-  padding: 0;
+  padding: 0px;
   .line {
     background-color: white;
     width: 0%;
     content: "";
-    height: 1.5px;
+    height: 2px;
     margin-top: 4px;
   }
 `;

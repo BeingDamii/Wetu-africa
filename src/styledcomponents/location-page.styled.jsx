@@ -1,22 +1,26 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-const StyledLocationPage = styled.div`
+const StyledLocationPage = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  background-color: #1f1f1f;
   .location-page-wrapper {
-    padding: 30px 50px;
+    padding: 50px 50px;
     display: flex;
+    height: fit-content;
     .container {
       width: 50%;
       padding-right: 30px;
       h1 {
         font-size: 28px;
+        color: white;
       }
       p {
         font-size: 16px;
-        line-height: 168%;
+        line-height: 170%;
         margin-top: 10px;
-        color: #606060;
+        color: #d4d4d4;
       }
     }
     .side-attractions {

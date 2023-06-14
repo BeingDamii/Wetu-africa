@@ -18,7 +18,6 @@ const LocationCard = ({ data }) => {
 // styles
 
 const StyledLocationCard = styled.div`
-  /* background-color: white; */
   cursor: pointer;
   padding: 10px;
   img {

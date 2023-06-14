@@ -6,6 +6,7 @@ import LocationCard from "../components/location-card";
 import Navbar from "../components/navbar";
 import locationData from "../resources/locationData";
 import StyledLocationPage from "../styledcomponents/location-page.styled";
+import { pageTransition } from "../resources/variants";
 
 import { v4 as uuidv4 } from "uuid";
 import SideAttractionCard from "../components/side-attraction-card";
@@ -27,7 +28,11 @@ const LocationPage = () => {
   return (
     <>
       {location && (
-        <StyledLocationPage>
+        <StyledLocationPage
+          variants={pageTransition}
+          initial="initial"
+          animate="animate"
+        >
           <Navbar />
           <div className="location-page-wrapper">
             <div className="container">

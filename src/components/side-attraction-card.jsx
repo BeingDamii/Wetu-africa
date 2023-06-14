@@ -13,7 +13,6 @@ const SideAttractionCard = ({ data }) => {
 // styles
 
 const StyledSideAttractionCard = styled.div`
-  background-color: white;
   cursor: pointer;
   img {
     width: 100%;
@@ -21,11 +20,12 @@ const StyledSideAttractionCard = styled.div`
   #title {
     font-size: 18px;
     margin-top: 10px;
+    color: white;
   }
   #desc {
     line-height: 148%;
     font-size: 14px;
-    color: #606060;
+    color: #d4d4d4;
     margin-top: 10px;
   }
 `;

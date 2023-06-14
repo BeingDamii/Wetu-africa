@@ -42,11 +42,12 @@ const StyledLocationAction = styled.div`
     display: flex;
     cursor: pointer;
     align-items: center;
-    border: solid #e4e4e4 2px;
+    border: solid #3b3b3b 2px;
     border-radius: 10px;
     padding: 10px 15px;
     h3 {
       font-size: 16px;
+      color: white;
       margin-left: 10px;
     }
   }
