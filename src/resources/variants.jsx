@@ -105,3 +105,30 @@ export const pageTransition = {
     },
   },
 };
+
+export const clipPathVariant = {
+  initial: {
+    clipPath: "circle(0% at 100% 0%)",
+  },
+  animate: {
+    clipPath: "circle(100%)",
+    transition: {
+      ease: "easeOut",
+      delayChildren: 0.3,
+      staggerChildren: 0.3,
+      duration: 0.5,
+    },
+  },
+};
+
+export const navLinksVariant = {
+  initial: {
+    opacity: 0,
+    y: 5,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { ease: "linear" },
+  },
+};

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Cta from "./components/cta";
 import InfoSection from "./components/info-section";
 import Navbar from "./components/navbar";
@@ -5,11 +6,12 @@ import OffCanvasMenu from "./components/offCanvasMenu";
 import WavingHand from "./components/waving-hand";
 
 function App() {
+  const [navActive, setNavActive] = useState(false);
   return (
     <div className="App">
-      <OffCanvasMenu/>
+      <OffCanvasMenu navActive={navActive} setNavActive={setNavActive} />
       {/* <WavingHand/> */}
-      <Navbar />
+      <Navbar setNavActive={setNavActive} />
       {/* <Cta /> */}
       {/* <InfoSection /> */}
     </div>

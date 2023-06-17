@@ -3,7 +3,7 @@ import NavbarWrapper from "../styledcomponents/navbar.styled";
 import { navbarVariant } from "../resources/variants";
 import NavElement from "./navElement";
 
-const Navbar = () => {
+const Navbar = ({ setNavActive }) => {
   return (
     <NavbarWrapper variants={navbarVariant} initial="initial" animate="animate">
       <NavLink to={"/"}>
@@ -15,7 +15,9 @@ const Navbar = () => {
         <NavElement text={"Food"} />
         <NavElement text={"Tell us your story"} />
       </nav>
-      <button className="mobile-toggle">Menu</button>
+      <button className="mobile-toggle" onClick={() => setNavActive(true)}>
+        Menu
+      </button>
     </NavbarWrapper>
   );
 };
