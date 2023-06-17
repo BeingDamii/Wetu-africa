@@ -8,9 +8,14 @@ import WavingHand from "./components/waving-hand";
 function App() {
   const [navActive, setNavActive] = useState(false);
   return (
-    <div className="App">
+    <div
+      style={{
+        height: navActive ? "100vh " : "fit-content",
+        overflow: navActive ? "hidden" : "show",
+      }}
+    >
       <OffCanvasMenu navActive={navActive} setNavActive={setNavActive} />
-      <WavingHand/>
+      <WavingHand />
       <Navbar setNavActive={setNavActive} />
       <Cta />
       {/* <InfoSection /> */}
