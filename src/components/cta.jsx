@@ -9,7 +9,6 @@ import {
   entryMotion,
   videoAnimeVariant,
 } from "../resources/variants";
-import WavingHand from "./waving-hand";
 
 const Cta = () => {
   // hooks

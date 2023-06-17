@@ -29,6 +29,15 @@ const StyledWavingHand = styled(motion.div)`
   border-radius: 50%;
   bottom: 50px;
   right: 70px;
+  @media only screen and (max-width: 767px) {
+    width: 70px;
+    height: 70px;
+    right: 30px;
+    bottom: 20px;
+    svg {
+      width: 40px;
+    }
+  }
 `;
 
 export default WavingHand;

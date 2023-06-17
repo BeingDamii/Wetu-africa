@@ -62,7 +62,8 @@ const StyledOffCanvasMenu = styled(motion.div)`
   display: flex;
   flex-direction: column;
   clip-path: circle(0% at 100% 0%);
-  /* clip-path: circle(100%); */
+  z-index: 100;
+
   .navlink-container {
     display: flex;
     flex-direction: column;

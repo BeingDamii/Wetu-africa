@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <OffCanvasMenu navActive={navActive} setNavActive={setNavActive} />
-      {/* <WavingHand/> */}
+      <WavingHand/>
       <Navbar setNavActive={setNavActive} />
-      {/* <Cta /> */}
+      <Cta />
       {/* <InfoSection /> */}
     </div>
   );

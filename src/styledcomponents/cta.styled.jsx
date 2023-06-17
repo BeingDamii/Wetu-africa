@@ -9,16 +9,31 @@ const CtaWrapper = styled.div`
   background-color: #0a0a0a;
   background-color: #1f1f1f;
   color: white;
+  @media only screen and (max-width: 767px) {
+    padding: 20px;
+  }
   .cta-hero {
     width: 100%;
     display: flex;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
     .container {
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
       :nth-child(1) {
         width: 67%;
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+        }
       }
       h1 {
         font-size: 64px;
         line-height: 100%;
+        @media only screen and (max-width: 767px) {
+          font-size: 32px;
+        }
       }
       p {
         font-size: 18px;
@@ -26,10 +41,17 @@ const CtaWrapper = styled.div`
         color: #b4b4b4;
         margin-top: 5px;
         margin-bottom: 10px;
+        @media only screen and (max-width: 767px) {
+          font-size: 14px;
+          margin-top: 10px;
+        }
       }
       .container-desc {
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: 767px) {
+          margin-top: 20px;
+        }
         :nth-child(2) {
           margin-top: 10px;
         }
@@ -37,6 +59,9 @@ const CtaWrapper = styled.div`
           width: 400px;
           line-height: 140%;
           font-size: 14px;
+          @media only screen and (max-width: 767px) {
+            width: 320px;
+          }
         }
       }
     }
@@ -47,6 +72,9 @@ const CtaWrapper = styled.div`
     height: 440px;
     margin-top: 10px;
     overflow: hidden;
+    @media only screen and (max-width: 767px) {
+      height: 300px;
+    }
     video {
       object-fit: cover;
       width: 100%;
