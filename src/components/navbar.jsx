@@ -15,6 +15,7 @@ const Navbar = () => {
         <NavElement text={"Food"} />
         <NavElement text={"Tell us your story"} />
       </nav>
+      <button className="mobile-toggle">Menu</button>
     </NavbarWrapper>
   );
 };

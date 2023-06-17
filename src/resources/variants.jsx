@@ -36,7 +36,7 @@ export const navbarVariant = {
     transition: {
       ease: "linear",
       duration: 0.5,
-      delay: 1.8,
+      delay: 1,
     },
   },
 };
@@ -51,7 +51,7 @@ export const heroVariant = {
     opacity: 1,
     transition: {
       duration: 0.8,
-      delay: 2.2,
+      delay: 1.7,
     },
   },
 };
