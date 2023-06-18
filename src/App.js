@@ -18,7 +18,7 @@ function App() {
       <WavingHand />
       <Navbar setNavActive={setNavActive} />
       <Cta />
-      {/* <InfoSection /> */}
+      <InfoSection />
     </div>
   );
 }

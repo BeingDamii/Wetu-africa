@@ -9,11 +9,10 @@ import InfoSectionWrapper from "../styledcomponents/info-section.styled";
 import ArrowButton from "./arrow-button";
 import locationData from "../resources/locationData";
 import LocationCard from "./location-card";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 const InfoSection = () => {
   const data = locationData();
-
 
   return (
     <InfoSectionWrapper>
@@ -33,6 +32,46 @@ const InfoSection = () => {
             time.
           </p>
         </div>
+        <div className="desc-row hide-mobile">
+          <div className="desc">
+            <h3>Suggest new location</h3>
+            <p>
+              Have you explored a new location lately? Tell us about it; we
+              would love to see where you went and add it to Tour Catalougue so
+              that new tourists can explore it too.
+            </p>
+            <ArrowButton text={"Get started"} isRight={true} />
+          </div>
+          <div className="desc">
+            <h3>Share your story</h3>
+            <p>
+              Tell us about your experience visiting a destination. Did you have
+              fun? any special moments? Share it with the world.
+            </p>
+            <ArrowButton text={"Get started"} isRight={true} />
+          </div>
+        </div>
+        <div className="desc-icons hide-mobile">
+          <Link to={"/"}>
+            <InstagramIcon />
+          </Link>
+          <Link to={"/"}>
+            <TwitterIcon />
+          </Link>
+          <Link to={"/"}>
+            <DribbbleIcon />
+          </Link>
+          <Link to={"/"}>
+            <GithubIcon />
+          </Link>
+        </div>
+      </div>
+      <div className="container card-wrapper">
+        {data.map((location) => {
+          return <LocationCard key={uuidv4()} data={location} />;
+        })}
+      </div>
+      <div className="footer container desc-container">
         <div className="desc-row">
           <div className="desc">
             <h3>Suggest new location</h3>
@@ -66,11 +105,6 @@ const InfoSection = () => {
             <GithubIcon />
           </Link>
         </div>
-      </div>
-      <div className="container card-wrapper">
-        {data.map((location) => {
-          return <LocationCard key={uuidv4()} data={location} />;
-        })}
       </div>
     </InfoSectionWrapper>
   );
