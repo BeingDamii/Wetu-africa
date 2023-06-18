@@ -5,6 +5,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "../resources/icons";
 const ArrowButton = ({ text, isRight }) => {
   return (
     <ArrowButtonWrapper
+    className="arrow-button"
       style={{ flexDirection: `${isRight ? "row" : "row-reverse"}` }}
     >
       <Link to={"/"}>{text}</Link>

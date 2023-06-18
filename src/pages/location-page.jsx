@@ -10,6 +10,7 @@ import { pageTransition } from "../resources/variants";
 
 import { v4 as uuidv4 } from "uuid";
 import SideAttractionCard from "../components/side-attraction-card";
+import OffCanvasMenu from "../components/offCanvasMenu";
 
 const LocationPage = () => {
   const navigate = useNavigate();
@@ -18,6 +19,8 @@ const LocationPage = () => {
 
   const [locations, setLocations] = useState(locationData);
   const [location, setLocation] = useState(null);
+
+  const [navActive, setNavActive] = useState(false);
 
   useEffect(() => {
     const currentLocationData = locations.filter(
@@ -32,16 +35,31 @@ const LocationPage = () => {
           variants={pageTransition}
           initial="initial"
           animate="animate"
+          style={{
+            height: navActive ? "100vh " : "fit-content",
+            overflow: navActive ? "hidden" : "show",
+          }}
         >
-          <Navbar />
+          <Navbar setNavActive={setNavActive} />
+          <OffCanvasMenu navActive={navActive} setNavActive={setNavActive} />
           <div className="location-page-wrapper">
             <div className="container">
               <h1>About {location.title}</h1>
               <p>{location.longDescription}</p>
               <LocationAction />
+              <div className="slide">
+                <div className="container side-attractions ">
+                  {location.sideAttractions.map((attraction) => {
+                    return (
+                      <SideAttractionCard key={uuidv4()} data={attraction} />
+                    );
+                  })}
+                </div>
+              </div>
               <ArrowButton text={"Go back"} />
             </div>
-            <div className="container side-attractions ">
+
+            <div className="container side-attractions hide">
               {location.sideAttractions.map((attraction) => {
                 return <SideAttractionCard key={uuidv4()} data={attraction} />;
               })}

@@ -38,6 +38,9 @@ const StyledLocationAction = styled.div`
   row-gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media only screen and (max-width: 767px) {
+    grid-template-columns: 100%;
+  }
   .location-action-container {
     display: flex;
     cursor: pointer;
