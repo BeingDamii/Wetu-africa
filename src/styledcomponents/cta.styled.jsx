@@ -72,6 +72,7 @@ const CtaWrapper = styled.div`
     height: 440px;
     margin-top: 10px;
     overflow: hidden;
+    pointer-events: none;
     @media only screen and (max-width: 767px) {
       height: 300px;
     }

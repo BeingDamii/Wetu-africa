@@ -13,6 +13,7 @@ const NavbarWrapper = styled(motion.div)`
   @media only screen and (max-width: 767px) {
     padding: 50px 20px;
     padding-bottom: 20px;
+    z-index: 80;
   }
   h1 {
     color: #00277a;
